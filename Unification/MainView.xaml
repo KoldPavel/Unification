@@ -1,0 +1,90 @@
+﻿<mah:MetroWindow x:Class="Unification.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+             Title=""
+             mc:Ignorable="d"
+             Width="500" Height="400"
+             WindowStartupLocation="CenterScreen">
+   
+    <mah:MetroWindow.Resources>
+        
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseLight.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        
+    </mah:MetroWindow.Resources>
+
+    <mah:MetroWindow.TitleTemplate>
+        <DataTemplate>
+            <Grid Margin="10,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="УНИФИКАЦИЯ ДЛИН СТЕРЖНЕЙ" 
+                           FontSize="15"
+                           VerticalAlignment="Center"
+                           Grid.Column="0"/>
+                <Button Content="Инструкция" 
+                        FontSize="10" 
+                        Background="Transparent" 
+                        BorderBrush="Transparent"
+                        BorderThickness="0"
+                        Cursor="Hand"
+                        Click="OpenWebsite_Click"
+                        Grid.Column="1"
+                        Foreground="White"/>
+            </Grid>
+        </DataTemplate>
+    </mah:MetroWindow.TitleTemplate>
+    <StackPanel>
+        <StackPanel>
+            <CheckBox x:Name="TopmostCheckBox" Content="Поверх других окон" Margin= "10,5,0,10"
+          Checked="TopmostCheckBox_Checked"
+                      Unchecked="TopmostCheckBox_Unchecked" FontSize="14"
+                      Style="{StaticResource MetroCheckBox}"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock x:Name="Длины_Олимпа" TextWrapping="Wrap"
+                       Text="Стандартные длины Олимпроекта:"
+                       Margin ="10,10,0,10" FontSize="14"
+                       HorizontalAlignment="Center"
+                       Style="{StaticResource MetroTextBlock}"/>
+            <TextBlock x:Name="Список_длин" TextWrapping="Wrap"
+           Text="1300, 1650, 1950, 2300, 2900, 3300, 3900, 4600, 5200, 5850, 6500, 7100, 7800, 8800, 9400, 9750, 10400, 11700"
+           Margin ="10,0,10,10" FontSize="14" HorizontalAlignment="Center"
+           Style="{StaticResource MetroTextBlock}"/>
+        </StackPanel>
+        <StackPanel>
+            <CheckBox x:Name="User_lenghts_check"
+                      Content="Применить свой список длин" IsChecked="False"
+                      Margin="10,10,0,10" FontSize="14"
+                      Style="{StaticResource MetroCheckBox}"/>
+            <TextBlock x:Name="Введите_список" TextWrapping="Wrap"
+                       Text="Введите свой список длин. Например: 1000, 3000, 10000"
+                        Margin ="10,10,0,10" FontSize="14"
+                       Style="{StaticResource MetroTextBlock}"/>
+            <TextBox x:Name="User_lenghts" TextWrapping="Wrap" Text="1000, 3000, 5000"
+                     Margin="10,10,10,10" Height="25"
+                     FontSize="14" RenderTransformOrigin="10,0.5"
+                     Width="460"/>
+            <CheckBox x:Name="LongOrShort"
+                      Content="Изменить короткий отгиб (True) или длинный (False) для П и Г" IsChecked="False" Margin="10,10,0,10" FontSize="14"
+                      Style="{StaticResource MetroCheckBox}"/>
+            <Button x:Name="Start" Content="Выполнить"
+                    Click="Start_Button_Click" Margin="10,10,10,10"
+                    FontSize="14"
+                    Style="{StaticResource MetroButton}"/>
+        </StackPanel>
+    </StackPanel>
+</mah:MetroWindow>
