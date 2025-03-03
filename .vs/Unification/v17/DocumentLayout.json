@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\koldunov\\Desktop\\Koldunov\\Revit\\GitRepo\\Unification\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{033261A4-C621-428F-8D48-348044380EDB}|Unification\\Unification.csproj|C:\\Users\\koldunov\\Desktop\\Koldunov\\Revit\\GitRepo\\Unification\\unification\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{033261A4-C621-428F-8D48-348044380EDB}|Unification\\Unification.csproj|c:\\users\\koldunov\\desktop\\koldunov\\revit\\gitrepo\\unification\\unification\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{033261A4-C621-428F-8D48-348044380EDB}|Unification\\Unification.csproj|solutionrelative:unification\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{033261A4-C621-428F-8D48-348044380EDB}|Unification\\Unification.csproj|c:\\users\\koldunov\\desktop\\koldunov\\revit\\gitrepo\\unification\\unification\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{033261A4-C621-428F-8D48-348044380EDB}|Unification\\Unification.csproj|C:\\Users\\koldunov\\Desktop\\Koldunov\\Revit\\GitRepo\\Unification\\unification\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{033261A4-C621-428F-8D48-348044380EDB}|Unification\\Unification.csproj|solutionrelative:unification\\command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{033261A4-C621-428F-8D48-348044380EDB}|Unification\\Unification.csproj|C:\\Users\\koldunov\\Desktop\\Koldunov\\Revit\\GitRepo\\Unification\\unification\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{033261A4-C621-428F-8D48-348044380EDB}|Unification\\Unification.csproj|solutionrelative:unification\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{033261A4-C621-428F-8D48-348044380EDB}|Unification\\Unification.csproj|C:\\Users\\koldunov\\Desktop\\Koldunov\\Revit\\GitRepo\\Unification\\unification\\externaleventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{033261A4-C621-428F-8D48-348044380EDB}|Unification\\Unification.csproj|C:\\Users\\koldunov\\Desktop\\Koldunov\\Revit\\GitRepo\\Unification\\unification\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{033261A4-C621-428F-8D48-348044380EDB}|Unification\\Unification.csproj|solutionrelative:unification\\mainview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{033261A4-C621-428F-8D48-348044380EDB}|Unification\\Unification.csproj|C:\\Users\\koldunov\\Desktop\\Koldunov\\Revit\\GitRepo\\Unification\\unification\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{033261A4-C621-428F-8D48-348044380EDB}|Unification\\Unification.csproj|solutionrelative:unification\\mainview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,14 +40,14 @@
               "RelativeDocumentMoniker": "Unification\\App.cs",
               "ToolTip": "C:\\Users\\koldunov\\Desktop\\Koldunov\\Revit\\GitRepo\\Unification\\Unification\\App.cs",
               "RelativeToolTip": "Unification\\App.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwC4AAABjAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-31T07:49:55.43Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ExternalEventHandler.cs",
               "DocumentMoniker": "C:\\Users\\koldunov\\Desktop\\Koldunov\\Revit\\GitRepo\\Unification\\Unification\\ExternalEventHandler.cs",
               "RelativeDocumentMoniker": "Unification\\ExternalEventHandler.cs",
@@ -55,12 +55,11 @@
               "RelativeToolTip": "Unification\\ExternalEventHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T13:19:51.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T13:19:51.637Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainView.xaml.cs",
               "DocumentMoniker": "C:\\Users\\koldunov\\Desktop\\Koldunov\\Revit\\GitRepo\\Unification\\Unification\\MainView.xaml.cs",
               "RelativeDocumentMoniker": "Unification\\MainView.xaml.cs",
@@ -72,14 +71,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "MainView.xaml",
               "DocumentMoniker": "C:\\Users\\koldunov\\Desktop\\Koldunov\\Revit\\GitRepo\\Unification\\Unification\\MainView.xaml",
               "RelativeDocumentMoniker": "Unification\\MainView.xaml",
               "ToolTip": "C:\\Users\\koldunov\\Desktop\\Koldunov\\Revit\\GitRepo\\Unification\\Unification\\MainView.xaml",
               "RelativeToolTip": "Unification\\MainView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-29T13:18:11.903Z"
+              "WhenOpened": "2025-01-29T13:18:11.903Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

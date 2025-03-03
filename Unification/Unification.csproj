@@ -87,10 +87,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Images\Rebar16.ico" />
-    <Resource Include="Resources\Images\Rebar32.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\Images\Rebar16.png" />
     <Resource Include="Resources\Images\Rebar32.png" />
   </ItemGroup>
