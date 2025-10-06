@@ -27,8 +27,12 @@ namespace Unification
         {
             string location = Assembly.GetExecutingAssembly().Location;
             try
-            { 
-            ribbonPanel = application.GetRibbonPanels(TabName).FirstOrDefault(p => p.Name == PanelName);
+            {
+                try
+                {
+                    ribbonPanel = application.GetRibbonPanels(TabName).FirstOrDefault(p => p.Name == PanelName);
+                }
+                catch { }
                 try
                 {
                     application.CreateRibbonTab(TabName);
