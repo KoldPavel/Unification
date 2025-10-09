@@ -27,8 +27,13 @@ namespace Unification
         {
             string location = Assembly.GetExecutingAssembly().Location;
             try
-            { 
-            ribbonPanel = application.GetRibbonPanels(TabName).FirstOrDefault(p => p.Name == PanelName);
+            {
+                try
+                {
+                    ribbonPanel = application.GetRibbonPanels(TabName).FirstOrDefault(p => p.Name == PanelName);
+                }
+                catch { }
+
                 try
                 {
                     application.CreateRibbonTab(TabName);
@@ -36,26 +41,26 @@ namespace Unification
                 catch { }
 
                 if (ribbonPanel == null)
-            {
-                ribbonPanel = application.CreateRibbonPanel(TabName, PanelName);
-            }
+                {
+                    ribbonPanel = application.CreateRibbonPanel(TabName, PanelName);
+                }
 
-            PushButtonData buttonData = new PushButtonData(nameof(UnificCommand), "Унификация", location, typeof(UnificCommand).FullName)
-            {
-                ToolTip = "Унификация длин стержней с кратностью Олимпроекта или пользовательской",
-                Image = new BitmapImage(new Uri(@"pack://application:,,,/Unification;component/Resources/Images/Rebar16.png")),
-                LargeImage = new BitmapImage(new Uri(@"pack://application:,,,/Unification;component/Resources/Images/Rebar32.png"))
-            };
-            
+                PushButtonData buttonData = new PushButtonData(nameof(UnificCommand), "Унификация", location, typeof(UnificCommand).FullName)
+                {
+                    ToolTip = "Унификация длин стержней с кратностью Олимпроекта или пользовательской",
+                    Image = new BitmapImage(new Uri(@"pack://application:,,,/Unification;component/Resources/Images/Rebar16.png")),
+                    LargeImage = new BitmapImage(new Uri(@"pack://application:,,,/Unification;component/Resources/Images/Rebar32.png"))
+                };
+
                 ribbonPanel.AddItem(buttonData);
 
                 return Result.Succeeded;
-            }
-            catch (Exception ex)
-            {
-                TaskDialog.Show("Error: Unification", ex.StackTrace);
-                return Result.Failed;
-            }
+                }
+                catch (Exception ex)
+                {
+                    TaskDialog.Show("Error: Unification", ex.StackTrace);
+                    return Result.Failed;
+                }
         }
 
         public Result OnShutdown(UIControlledApplication application)

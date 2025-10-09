@@ -1,0 +1,10 @@
+﻿<RevitAddIns>
+    <AddIn Type="Application">
+      <Name>Unification</Name>
+      <Assembly>Unification\Unification.dll</Assembly>
+      <AddInId>88DE31C1-FD7C-4C99-BF2A-6A175EDB2791</AddInId>
+      <FullClassName>Unification.App</FullClassName>
+      <VendorId>Koldunov</VendorId>
+      <VendorDescription>Koldunov</VendorDescription>
+    </AddIn>
+</RevitAddIns>
